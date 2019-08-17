@@ -1,77 +1,167 @@
-
-
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>only for api2u</title>
-    <!--[if lt IE 9]><div class="alert alert-danger topframe" role="alert">你的浏览器实在<strong>太太太太太太旧了</strong>，放学别走，升级完浏览器再说 <a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div><![endif]-->
+<!DOCTYPE html> 
+<html lang="zh-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="author" content="I am I,QSong#xxrar.com">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="X-UA-Compatible" content="edge"/>
+    <title>api2u</title>
+    <meta name="Keywords" content="">
+    <link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/css.css" type="text/css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/skel.min.js"></script>
+	<script src="./js/util.js"></script>
+	<script src="./js/respond.min.js"></script>
 </head>
 <body>
-<div class="nav">
-    <div id="site-info">
-        <span>年轻的木子，麦，木子的首页</span>
-    </div>
-</div>
-<div class="modern">
-    <div class="row">
-        <div class="bottom">
-            <div>🌈 api2u</div>
-        </div>
-        <div class="bottom">
-            <div><a href="https://blog.youngje.me" target="_blank">🏠 BLOG</a></div>
-        </div>
-        <div class="bottom">
-            <div><a href="https://leeskill.tech" target="_blank">💗 SKILL</a></div>
-        </div>
-        <div class="bottom">
-            <div><a href="http://pan.leeskill.tech" target="_blank">☁️ CLOUD</a></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="top">
-            <div id="like">
-                <div class='like-vote'>
-                    <p class='like-title'>LIKE THIS PAGE?</p>
-                    <div class='like-count'>
-                        <i class="fa fa-heart"></i><span id="count">0</span>
-                    </div>
+    <div id="wrapper">
+        <article id="home" class="panel special" style="display: flex;">
+            <div class="image" style="background-image: url(&#39;images/image1.jpg&#39;); background-position: center center;">
+                <img src="./image.jpg" alt="" data-position="center center" style="display: none;">
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <header>
+	<div class="logo">
+		<img src="https://q1.qlogo.cn/g?b=qq&nk=344667237&s=640" width="100" height="100" class="logo">	</div>
+	<div class="content">
+		<div class="inner">
+			<h1>api2u</h1>
+			<p>
+			youngje<br>
+			</p>
+		</div>
+	</div>
+                    </header>
+	<nav id="nav">
+	<ul class="actions vertical special spinY">
+		<li><a href="https://blog.youngje.me" target="_self" class="button">博客</a></li>
+		<li><a href="https://pan.leeskill.tech" target="_self" class="button">云盘</a></li>
+		<li><a href="https://leeskill.tech" target="_self" class="button">分享站</a></li>
+        	<li><a href="https://api2u.shop" target="_self" class="button">无</a></li>
+	</ul>
+	</nav>
+                    <ul class="icons">
+                        
+                        <li><a href="https://t.me/api2u" target="_blank" class="icon fa-telegram"></a>
+                        </li>
+                        <li><a href="mailto:lee@youngje.me" target="_blank" class="icon fa-envelope"></a>
+                        </li>
+  
                 </div>
             </div>
-        </div>
-        <div class="top">
-            <div><a href="https://www.youngje.me" rel="nofollow" target="_blank">BACK</a></div>
-        </div>
-        <div class="top">
-            <div>战斗已经停止</div>
-        </div>
-        <div class="top">
-            <div>我们从未被征服。</div>
-        </div>
+        </article>
+        <footer id="footer" class="">
+              </script>
+	<p class="copyright">
+		© Copyright 2019 <a href="https://youngje.me" target="_self">api2u</a>. All Rights Reserved
+	</p>
+        </footer>
     </div>
-</div>
-<img id="i" src="https://leeskill.tech/phone.jpg">
-<img id="v" src="https://leeskill.tech/background.jpg">
+    <!--[if lte IE 8]><![endif]-->
+    <script>
+        (function($) {
+            skel.breakpoints({
+                xlarge: '(max-width: 1680px)',
+                large: '(max-width: 1280px)',
+                medium: '(max-width: 980px)',
+                small: '(max-width: 736px)',
+                xsmall: '(max-width: 480px)',
+                xxsmall: '(max-width: 360px)'
+            });
+            $(function() {
+                var $window = $(window),
+                    $document = $(document),
+                    $body = $('body'),
+                    $wrapper = $('#wrapper'),
+                    $footer = $('#footer');
+                $window.on('load', function() {
+                    window.setTimeout(function() {
+                        $body.removeClass('is-loading-0');
+                        window.setTimeout(function() {
+                            $body.removeClass('is-loading-1');
+                        }, 1500);
+                    }, 100);
+                });
+                $('form').placeholder();
+                var $wrapper = $('#wrapper'),
+                    $panels = $wrapper.children('.panel'),
+                    locked = true;
+                $panels.not($panels.first()).addClass('inactive').hide();
+                $panels.each(function() {
+                    var $this = $(this),
+                        $image = $this.children('.image'),
+                        $img = $image.find('img'),
+                        position = $img.data('position');
+                    $image.css('background-image', 'url(' + $img.attr('src') + ')');
+                    if (position) $image.css('background-position', position);
+                    $img.hide();
+                });
+                window.setTimeout(function() {
+                    locked = false;
+                }, 1250);
+                $('a[href^="#"]').on('click', function(event) {
+                    var $this = $(this),
+                        id = $this.attr('href'),
+                        $panel = $(id),
+                        $ul = $this.parents('ul'),
+                        delay = 0;
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (locked) return;
+                    locked = true;
+                    $this.addClass('active');
+                    if ($ul.hasClass('spinX') || $ul.hasClass('spinY')) delay = 250;
+                    window.setTimeout(function() {
+                        $panels.addClass('inactive');
+                        $footer.addClass('inactive');
+                        window.setTimeout(function() {
+                            $panels.hide();
+                            $panel.show();
+                            $document.scrollTop(0);
+                            window.setTimeout(function() {
+                                $panel.removeClass('inactive');
+                                $this.removeClass('active');
+                                locked = false;
+                                $window.triggerHandler('--refresh');
+                                window.setTimeout(function() {
+                                    $footer.removeClass('inactive');
+                                }, 250);
+                            }, 100);
+                        }, 350);
+                    }, delay);
+                });
+                if (skel.vars.IEVersion < 12) {
+                    $window.on('--refresh', function() {
+                        $wrapper.css('height', 'auto');
+                        window.setTimeout(function() {
+                            var h = $wrapper.height(),
+                                wh = $window.height();
+                            if (h < wh) $wrapper.css('height', '100vh');
+                        }, 0);
+                        if (skel.vars.IEVersion < 10) {
+                            var $panel = $('.panel').not('.inactive'),
+                                $image = $panel.find('.image'),
+                                $content = $panel.find('.content'),
+                                ih = $image.height(),
+                                ch = $content.height(),
+                                x = Math.max(ih, ch);
+                            $image.css('min-height', x + 'px');
+                            $content.css('min-height', x + 'px');
+                        }
+                    });
+                    $window.on('load', function() {
+                        $window.triggerHandler('--refresh');
+                    });
+                    $('.spinX').removeClass('spinX');
+                    $('.spinY').removeClass('spinY');
+                }
+            });
+        })(jQuery);
 
-<script>var v=document.getElementById('v');if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){v.parentNode.removeChild(v)}v.volume=0.6;</script>
-</body>
-
-<script>
-    var data = {
-        user: 'flxxyz',
-        key: '81dc9bdb52d04dc20036dbd8313ed055'
-    }
-</script>
-
-<script src="https://leeskill.tech/app.js"></script>
-<script>
-
-
-console.log("%c", "padding:50px;line-height:93px;background:url('https://leeskill.tech/logonew.png') no-repeat;");
-console.log("%c本页面修改自flxxyz.com", "text-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:2em");
-console.log("%c图片来源:", "color:red", "@G195");
-console.log("%c声音来源:", "color:red", "https://leeskill.tech/phone.jpg");
-</script>
-</html>
+</body></html>
